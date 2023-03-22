@@ -153,7 +153,7 @@
   .right {
     margin-left: 600px;
     display: flex;
-    padding: 0px 20px 40px 20px;
+    padding: 0px 30px 30px 30px;
     flex-direction: column;
   }
   /* header section */
@@ -165,6 +165,7 @@
     width: 100%;
     justify-content: space-between;
   }
+  
   
   .login__page--header {
     display: flex;
@@ -206,9 +207,8 @@
     cursor: pointer;
   }
   .loginPage__form {
-    margin: 50px 0 50px 0;
+    margin: 30px 0 30px 0;
     display: flex;
-    gap: 20px;
     flex-direction: column;
   }
   
@@ -220,20 +220,17 @@
   .sub-title {
     font-size: 1.8rem;
     font-weight: 500;
-    margin-bottom: 1.2rem;
   }
   
   .row {
     display: flex;
+    gap: 30px;
+    width: 100%;
   }
   
   .col-sm {
-    margin-top: 10px;
-    max-width: 100%;
-    width: 50%;
-    /* padding-left: 10px; */
-    padding-right: 10px;
-    flex-shrink: 0;
+    
+    width: 100%;
   }
   
   .section {
@@ -511,20 +508,13 @@
   
     .row {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: row;
-      margin-top: 4px;
-      margin-left: 10px;
-      margin-right: 1rem;
+      gap: 30px;
+     
     }
   
     .col-sm {
-      margin-top: 10px;
       max-width: 100%;
-      width: 50%;
-      /* padding-left: 10px; */
-      padding-right: 10px;
-      flex-shrink: 0;
     }
   
     .section {
