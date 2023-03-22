@@ -278,15 +278,17 @@
   /* Tooltip text */
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 10vw;
+    width: 200px;
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 10px;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    padding: 1rem;
+    right: -100px;
+    top: 20px;
+    
   }
   
   /* Show the tooltip text when you mouse over the tooltip container */
@@ -313,6 +315,13 @@
   }
   /* Responsive styling */
   @media (max-width: 1280px) {
+    .tooltip .tooltiptext {
+        width: 200px;
+        font-size: 16px;
+        padding: 5px 5px;
+        right: -120px;
+        top: 20px;
+}
     .login__button {
       width: 280px;
       height: 60px;
@@ -430,6 +439,14 @@
     }
   }
   @media (max-width: 1024px) {
+    .tooltip .tooltiptext {
+        width: 150px;
+        font-size: 12px;
+        padding: 5px 5px;
+        border-radius: 6px;
+        right: -80px;
+        top: 27px;
+}
     .section input,
     select,
     textarea,
@@ -610,6 +627,12 @@
   }
   
   @media (max-width: 652px) {
+    .tooltip .tooltiptext {
+            width: 150px;
+            font-size: 12px;
+            padding: 5px 5px;
+            border-radius: 6px;
+    }
     .login__page--header img {
       width: 200px;
       margin: 0;
