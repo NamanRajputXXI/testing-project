@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./register.css" />
+    <title>Register</title>
+  </head>
+  <script src="./resister.js" defer></script>
+  <script
+    src="https://kit.fontawesome.com/274881ac10.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <div class="container">
+      <!-- for image section -->
+      <div class="image__container">
+        <div class="gradient-overlay"></div>
+        <img src="./assets/bg_image.png" alt="" />
+        <div class="image__text">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+      </div>
+      <!-- for form section  -->
+      <div class="right">
+        <!-- navbar / header -->
+        <div class="login__page--header">
+          <img src="./assets/logo.png" alt="darkLogo" />
+          <div class="register__button--box">
+            <p>Already have an account ?</p>
+            <button class="register__button">
+              <a href="./index.html" style="text-decoration: none; color: white"
+                >Login</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- form -->
+        <form class="loginPage__form">
+          <p class="title">Create Account</p>
+          <p class="sub-title">Complete the form to complete your courses</p>
+          <div class="row">
+            <div class="col-sm">
+              <div class="section">
+                <p>Student Name</p>
+                <input
+                  type="text"
+                  placeholder="Enter Student Name"
+                  name="studentName"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="section">
+                <p>Parent Name</p>
+                <input
+                  type="text"
+                  placeholder="Enter Parent Name"
+                  name="parentName"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="section">
+                <p>Year of Bith</p>
+                <input
+                  type="number"
+                  placeholder="Year of Birth (Optional)"
+                  name="dob"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="section">
+                <p>Gender</p>
+                <select name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="section">
+                <p>Class</p>
+                <select name="class">
+                  <option value="6">6 th</option>
+                  <option value="7">7 th</option>
+                  <option value="8">8 th</option>
+                  <option value="9">9 th</option>
+                  <option value="10">10 th</option>
+                  <option value="11">10 + 1</option>
+                  <option value="12">10 + 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="section">
+                <p>School Name (Optional)</p>
+                <input
+                  type="text"
+                  placeholder="School Name (Optional)"
+                  name="schoolName"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="section">
+                <p>Contact Number</p>
+                <input
+                  type="text"
+                  placeholder="Enter Contact Number"
+                  name="contactNo"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="section">
+                <p style="display: inline">Whats App Number</p>
+                <!-- <span class="info-icon">
+                    
+                    <span class="tooltip-text"> </span>
+                  </span> -->
+                <div class="tooltip">
+                  <i class="fa fa-info tooltip"></i>
+                  <span class="tooltiptext"
+                    >"Your Whatsapp number is necessary for sharing the meeting
+                    links of doubt clarification live sessions"</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter Whatsapp Number"
+                  name="whatsappNo"
+                  class="whatsapp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <p>Email Address</p>
+            <input
+              type="email"
+              placeholder="Enter your Email address"
+              name="email"
+            />
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="section">
+                <p>Password</p>
+                <div style="display: flex; align-items: center">
+                  <input
+                    type="password"
+                    placeholder="Create your Password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                    class="id_password2"
+                  />
+                  <i
+                    class="far fa-eye"
+                    id="togglePassword2"
+                    style="margin-left: -40px"
+                  ></i>
+                </div>
+                <p style="color: rgb(255, 148, 148); margin-top: 5px">
+                  This field is required
+                </p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="section">
+                <p>Confirm Password</p>
+                <div style="display: flex; align-items: center">
+                  <input
+                    type="password"
+                    placeholder="Confirm your Password"
+                    name="confirmPassword"
+                    autocomplete="current-password"
+                    required
+                    class="id_password"
+                  />
+                  <i
+                    class="far fa-eye"
+                    id="togglePassword"
+                    style="margin-left: -40px"
+                  ></i>
+                </div>
+                <p style="color: rgb(255, 148, 148); margin-top: 5px">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="mx-auto mt-5">
+            <button class="login__button" disabled type="submit">
+              Register
+            </button>
+          </a>
+        </form>
+        <p style="text-align: center">
+          by Clicking on Register you agree to our
+          <a
+            href="/"
+            style="
+              font-size: 20px;
+              text-decoration: none;
+              color: rgb(8, 172, 242);
+            "
+            >Terms</a
+          >
+          and
+          <a
+            href="/"
+            style="
+              font-size: 20px;
+              text-decoration: none;
+              color: rgb(8, 172, 242);
+            "
+            >Conditions</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script src="./login.js" defer></script>
+  </head>
+  <body>
+    <div class="login__page">
+      <div class="image__container">
+        <div class="gradient-overlay"></div>
+        <img src="./assets/bg_image.png" alt="" />
+        <div class="image__text">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+      </div>
+      <form class="login__page--content">
+        <div class="login__page--header">
+          <img src="./assets/logo.png" alt="darkLogo" />
+          <div class="register__button--box">
+            <p>Don't have account ?</p>
+            <button class="register__button">
+              <a
+                href="./resister.html"
+                style="text-decoration: none; color: white"
+                >Register</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="loginPage__form">
+          <div class="loginPage__heading">
+            <h1>Welcome Back</h1>
+            <p>Please Log In. Your Complete your Course</p>
+          </div>
+          <div class="input__elements">
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Enter your Email Address" />
+          </div>
+          <div class="input__elements">
+            <label for="password">Password</label>
+            <div class="password__input">
+              <input
+                type="password"
+                name="password"
+                autocomplete="current-password"
+                required=""
+                id="id_password"
+                placeholder="Enter your Password"
+              />
+              <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+          </div>
+          <div class="reset__password">
+            <p>Reset Password ?</p>
+          </div>
+          <button class="login__button" type="submit">Login</button>
+          <div class="or__text">
+            <div class="horizontal__line"></div>
+            <p>or</p>
+            <div class="horizontal__line"></div>
+          </div>
+        </div>
+        <div class="social__connect">
+          <div class="social__link--container">
+            <img src="https://img.icons8.com/color/48/null/google-logo.png" />
+            <h3>Continue with Google</h3>
+          </div>
+          <div class="social__link--container">
+            <img src="https://img.icons8.com/color/48/null/facebook-new.png" />
+            <h3>Continue with Facebook</h3>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
