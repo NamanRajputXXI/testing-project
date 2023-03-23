@@ -619,6 +619,12 @@ optgroup {
 }
 
 @media (max-width: 652px) {
+  .loginPage__form {
+    margin: 20px 0 20px 0;
+  }
+  .row {
+    gap: 0px;
+  }
   .tooltip .tooltiptext {
     width: 150px;
     font-size: 12px;
@@ -684,6 +690,12 @@ optgroup {
   .col-sm {
     width: auto;
   }
+  input[type="date"]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+  }
+  input[type="date"]:focus::-webkit-datetime-edit {
+    color: black !important;
+  }
 
   .section {
     width: auto;
@@ -698,12 +710,12 @@ optgroup {
   optgroup {
     /* width: 80%; */
     font-size: 1rem;
-    height: 30px;
+    height: 40px;
   }
   .section select {
-    width: 70%;
+    width: 50%;
     font-size: 1rem;
-    height: 30px;
+    height: 40px;
   }
   .button-register {
     width: 200px;
