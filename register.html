@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./register.css" />
     <title>Register</title>
   </head>
-  <script src="./resigter.js" defer></script>
+  <!-- <script src="./resigter.js" defer></script> -->
   <script
     src="https://kit.fontawesome.com/274881ac10.js"
     crossorigin="anonymous"
@@ -159,18 +159,18 @@
           </div>
           <div class="section">
             <p>Email Address</p>
-              <input
-                type="email"
-                placeholder="Enter your Email address"
-                name="email"
-                id="email"
-                class="email-input"
-                size="64"
-                maxlength="64"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                title="Please enter a valid email address"
-                required
-                />
+            <input
+              type="email"
+              placeholder="Enter your Email address"
+              name="email"
+              id="email"
+              class="email-input"
+              size="64"
+              maxlength="64"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Please enter a valid email address"
+              required
+            />
             <!-- <p class="etext"></p> -->
           </div>
           <div class="row">
@@ -226,7 +226,13 @@
             </div>
           </div>
           <a class="mx-auto mt-5">
-            <input type="submit" value="Register" class="login__button" type="submit">
+            <input
+              type="submit"
+              value="Register"
+              class="login__button"
+              id="submitButton"
+              onclick="matchPassword()"
+            />
           </a>
         </form>
         <p style="text-align: center">
@@ -254,4 +260,49 @@
       </div>
     </div>
   </body>
+  <script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const togglePassword2 = document.querySelector("#togglePassword2");
+    const password = document.querySelector(".id_password");
+    const password2 = document.querySelector(".id_password2");
+    const submitButton = document.querySelector("#submitButton");
+    const form = document.querySelector("form");
+
+    togglePassword.addEventListener("click", function (e) {
+      // toggle the type attribute
+      const type =
+        password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
+      // toggle the eye slash icon
+      this.classList.toggle("fa-eye-slash");
+    });
+
+    togglePassword2.addEventListener("click", function (e) {
+      // toggle the type attribute
+      const type =
+        password2.getAttribute("type") === "password" ? "text" : "password";
+      password2.setAttribute("type", type);
+      // toggle the eye slash icon
+      this.classList.toggle("fa-eye-slash");
+    });
+
+    function matchPassword() {
+      if (password.value != password2.value) {
+        alert("Password and Confirm Password not matched");
+        return false;
+      }else{
+        alert("Password and Confirm Password matched")
+        return true;
+      }
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+
+    // submitButton.addEventListener("click", (e) => {
+    //   e.preventDefault();
+    //   matchPassword();
+    // });
+  </script>
 </html>
