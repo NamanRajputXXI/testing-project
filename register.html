@@ -123,7 +123,7 @@
                   placeholder="Enter Contact Number"
                   name="contactNo"
                   size="10"
-                  pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+                  pattern=".{10,}"
                   maxlength="10"
                   required
                 />
@@ -150,6 +150,8 @@
                   class="whatsapp"
                   size="10"
                   maxlength="10"
+                  pattern="[0-9]{10}"
+                  title="Your whatsapp number should be 10 digits long"
                   required
                 />
               </div>
